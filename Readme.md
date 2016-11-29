@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Семаев](https://up.htmlacademy.ru/adaptive/9/user/116409).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Половников`.
 
 ---
 
