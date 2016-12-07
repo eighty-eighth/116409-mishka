@@ -8,7 +8,7 @@
 
 
     <header class="main-header">
-      <div class="main-header__wrapper">
+      <div class="container">
         <div class="main-header__logo">
           <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип Мишка">
         </div>
@@ -51,11 +51,11 @@
         </a>
       </div>
 
-      <div class="main-index__wrapper">
 
-        <div class="hit">
+      <div class="hit">
+        <div class="container">
           <h2 class="hit__title">Вязаные корзинки</h2>
-          <b class="hit__flag">Товар недели</b>
+          <div class="hit__flag">Товар недели</div>
           <p class="hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="hit__characteristics">
             <tr>
@@ -79,21 +79,55 @@
           </div>
           <a class="hit__to-order  btn">Заказать</a>
         </div>
-        <hr class="zigzag-line">
+      </div>
+      <hr class="zigzag-line">
 
-        <div class="about-us">
+      <div class="about-us">
+        <div class="container">
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
-            <li class="about-us__item  about-us__item--flower">Экологически чистые материалы</li>
-            <li class="about-us__item  about-us__item--money">Скандинавский стиль по российской цене</li>
-            <li class="about-us__item  about-us__item--heart">Увеличивает лайки на фотографиях</li>
-            <li class="about-us__item  about-us__item--clew">Связано вручную с любовью и умилением</li>
-            <li class="about-us__item  about-us__item--rocket">Поддержка отечественного производителя</li>
-            <li class="about-us__item  about-us__item--gift">Поставляется в подарочной упаковке</li>
+            <li class="about-us__item">
+              <div class="about-us__item-img">
+                <img src="http://placehold.it/33x38" width="33" height="38" alt="Цветочек">
+              </div>
+              <p class="about-us__item-info">Экологически чистые материалы</p>
+            </li>
+            <li class="about-us__item">
+              <div class="about-us__item-img">
+                <img src="http://placehold.it/47x27" width="47" height="27" alt="Купюра">
+              </div>
+              <p class="about-us__item-info">Скандинавский стиль по российской цене</p>
+            </li>
+            <li class="about-us__item">
+              <div class="about-us__item-img">
+                <img src="http://placehold.it/34x27" width="34" height="27" alt="Сердечко">
+              </div>
+              <p class="about-us__item-info">Увеличивает лайки на фотографиях</p>
+            </li>
+            <li class="about-us__item">
+              <div class="about-us__item-img">
+                <img src="http://placehold.it/35x34" width="35" height="34" alt="Клубок">
+              </div>
+              <p class="about-us__item-info">Связано вручную с любовью и умилением</p>
+            </li>
+            <li class="about-us__item">
+              <div class="about-us__item-img">
+                <img src="http://placehold.it/55x23" width="55" height="23" alt="Ракета">
+              </div>
+              <p class="about-us__item-info">Поддержка отечественного производителя</p>
+            </li>
+            <li class="about-us__item">
+              <div class="about-us__item-img">
+                <img src="http://placehold.it/33x32" width="33" height="32" alt="Подарок">
+              </div>
+              <p class="about-us__item-info">Поставляется в подарочной упаковке</p>
+            </li>
           </ul>
         </div>
+      </div>
 
-        <div class="reviews">
+      <div class="reviews">
+        <div class="container">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__items">
             <blockquote class="reviews__item">
@@ -104,32 +138,38 @@
                 стали более стильными, а также набирают больше лайков!
               </p>
               <cite class="reviews__author-name">Анастасия Красильникова</cite>
-              <span class="reviews__author-email">@misssssiskras</span>
+              <div class="reviews__author-email">@misssssiskras</div>
             </blockquote>
             <button class="reviews__toggle  reviews__toggle--prev">Предыдущий отзыв</button>
             <button class="reviews__toggle  reviews__toggle--next">Следующий отзыв</button>
-            <a class="reviews__write-link  btn" href="#">Написать</a>
+            <a class="reviews__write  btn" href="#">Написать</a>
           </div>
         </div>
-        <hr class="zigzag-line">
+      </div>
+      <hr class="zigzag-line">
 
-        <div class="contacts">
+      <div class="contacts">
+        <div class="container">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__address">
-            <tr>
-              <td class="contacts__field">e-mail:</td>
-              <td class="contacts__value"><a class="contacts__link" href="#">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr>
-              <td class="contacts__field">адрес:</td>
-              <td class="contacts__value">
-                г. Санкт-Петербург,<br>
-                ул. Большая<br>
-                Конюшенная,<br>
-                д. 19/8, офис 101
-              </td>
-            </tr>
-          </table>
+          <div class="contacts__row">
+            <div class="contacts__field">
+              e-mail:
+            </div>
+            <div class="contacts__value">
+              <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
+            </div>
+          </div>
+          <div class="contacts__row">
+            <div class="contacts__field">
+              адрес:
+            </div>
+            <div class="contacts__value">
+              г. Санкт-Петербург,<br>
+              ул. Большая<br>
+              Конюшенная,<br>
+              д. 19/8, офис 101
+            </div>
+          </div>
         </div>
       </div>
 
@@ -138,7 +178,7 @@
       </div>
 
       <div class="feedback">
-        <div class="feedback__wrapper">
+        <div class="container">
           <a class="feedback__link btn" href="#">Напишите нам</a>
         </div>
       </div>
@@ -147,7 +187,7 @@
 
 
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
+      <div class="container">
         <p class="main-footer__social">
           <a class="social-link social-link--inst" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
           <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
@@ -163,28 +203,30 @@
     </footer>
 
     <div class="modal-basket">
-      <h2 class="modal-basket__title">
-        Добавить<br>
-        в корзину
-      </h2>
-      <form class="modal-basket__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="fieldset-sizes">
-          <legend>Выберите размер:</legend>
-          <label class="fieldset-sizes__label">
-            <input class="fieldset-sizes__input" type="radio" name="fieldset-sizes" value="small" checked>
-            Маленький
-          </label>
-          <label class="fieldset-sizes__label">
-            <input class="fieldset-sizes__input" type="radio" name="fieldset-sizes" value="middle">
-            Средний
-          </label>
-          <label class="fieldset-sizes__label">
-            <input class="fieldset-sizes__input" type="radio" name="fieldset-sizes" value="large">
-            Большой
-          </label>
-        </fieldset>
-        <button class="modal-basket__form-submit" type="submit">Добавить</button>
-      </form>
+      <div class="container">
+        <h2 class="modal-basket__title">
+          Добавить<br>
+          в корзину
+        </h2>
+        <form class="modal-basket__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="fieldset-sizes">
+            <legend>Выберите размер:</legend>
+            <label class="fieldset-sizes__label">
+              <input class="fieldset-sizes__input" type="radio" name="fieldset-sizes" value="small" checked>
+              Маленький
+            </label>
+            <label class="fieldset-sizes__label">
+              <input class="fieldset-sizes__input" type="radio" name="fieldset-sizes" value="middle">
+              Средний
+            </label>
+            <label class="fieldset-sizes__label">
+              <input class="fieldset-sizes__input" type="radio" name="fieldset-sizes" value="large">
+              Большой
+            </label>
+          </fieldset>
+          <button class="modal-basket__form-submit" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
 
 
