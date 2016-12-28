@@ -1,0 +1,178 @@
+.page-index {
+  background: $bg-aliceblue url("../img/preview/mishka-index-mobile.jpg") no-repeat 50% 0;
+  min-height: 750px;
+}
+
+@media #{$tablet-widths} {
+  .page-index {
+    background: $bg-aliceblue url("../img/preview/mishka-index-tablet.jpg") no-repeat 50% 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-index {
+    background: $bg-aliceblue url("../img/preview/mishka-index-desktop.jpg") no-repeat 50% 0;
+  }
+}
+
+.page-catalog {
+  background: $bg-aliceblue url("../img/preview/mishka-catalog-mobile.jpg") no-repeat 50% 0;
+  min-height: 750px;
+}
+
+@media #{$tablet-widths} {
+  .page-catalog {
+    background: $bg-aliceblue url("../img/preview/mishka-catalog-tablet.jpg") no-repeat 50% 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-catalog {
+    background: $bg-aliceblue url("../img/preview/mishka-catalog-desktop.jpg") no-repeat 50% 0;
+  }
+}
+
+.page-form {
+  background: $bg-aliceblue url("../img/preview/mishka-form-mobile.jpg") no-repeat 50% 0;
+  min-height: 750px;
+}
+
+@media #{$tablet-widths} {
+  .page-form {
+    background: $bg-aliceblue url("../img/preview/mishka-form-tablet.jpg") no-repeat 50% 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-form {
+    background: $bg-aliceblue url("../img/preview/mishka-form-desktop.jpg") no-repeat 50% 0;
+  }
+}
+
+/* Сеточные стили для оформления - фон и тени-обводки*/
+/* Порядок вложенности: зеленый-красный-голубой-желтый-розовый-синий-оранжевый*/
+body > *,
+body > * > *,
+body > * > * > *,
+body > * > * > * > *,
+body > * > * > * > * > *,
+body > * > * > * > * > * > *,
+body > * > * > * > * > * > * > * {
+  position: relative;
+}
+body > *::before,
+body > * > *::before,
+body > * > * > *::before,
+body > * > * > * > *::before,
+body > * > * > * > * > *::before,
+body > * > * > * > * > * > *::before,
+body > * > * > * > * > * > * > *::before {
+  content: "." attr(class);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 24px;
+  /* padding: 2px 5px; сомнительный падинг*/
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+body > * {
+  background: rgba(128, 255, 128, 0.25);
+  background-clip: content-box;
+  outline: 3px solid green;
+  outline-offset: -3px;
+}
+body > *::before {
+  color: white;
+  background: green;
+}
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(255, 45, 82, 0.9);
+  outline-offset: -3px;
+}
+body > * > *::before {
+  color: white;
+  background: #ff2d52;
+}
+body > * > * > * {
+  background: rgba(173, 216, 230, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(173, 216, 230, 0.9);
+  outline-offset: -3px;
+}
+body > * > * > *::before {
+  color: black;
+  background: lightblue;
+}
+body > * > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(234, 255, 45, 0.9);
+  outline-offset: -3px;
+}
+body > * > * > * > *::before {
+  color: black;
+  background: #eaff2d;
+}
+body > * > * > * > * > * {
+  background: rgba(238,	130, 238, 0.2);
+  background-clip: content-box;
+  outline: 3px solid violet;
+  outline-offset: -3px;
+}
+body > * > * > * > * > *::before {
+  color: black;
+  background: violet;
+}
+body > * > * > * > * > * > * {
+  background: rgba(0,	0, 128, 0.2);
+  background-clip: content-box;
+  outline: 3px solid navy;
+  outline-offset: -3px;
+}
+body > * > * > * > * > * > *::before {
+  color: white;
+  background: navy;
+}
+body > * > * > * > * > * > * > * {
+  outline: 3px solid coral;
+  outline-offset: -3px;
+}
+body > * > * > * > * > * > * > *::before {
+  color: white;
+  background: coral;
+}
+
+
+.main-header::before {
+  content: ".main-header";
+}
+
+.main-header__wrapper::before {
+  content: ".main-header__wrapper";
+}
+
+.main-header__logo::before {
+  content: "";
+}
+
+.main-nav::before {
+  content: ".main-nav";
+}
+
+.main-nav__list::before {
+  content: ".main-nav__list";
+}
+
+.main-nav__list_user::before {
+  content: ".main-nav__list_user";
+}
+
+.main-index::before {
+  content: ".main-index";
+}

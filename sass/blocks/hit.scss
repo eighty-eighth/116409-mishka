@@ -1,3 +1,158 @@
 .hit {
-  box-shadow: 0 0 0 2px blue;
+  margin-bottom: 34px;
+}
+
+.hit__wrapper {
+  @include container-padding;
+  @include clearfix;
+}
+
+.hit__header {
+
+}
+
+.hit__title {
+  min-height: 30px; /* временно для сетки*/
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.hit__flag {
+  min-height: 17px; /* временно для сетки*/
+}
+
+.hit__description {
+  min-height: 72px;
+  margin-top: 26px;
+  margin-bottom: 28px;
+}
+
+.hit__characteristics {
+  width: 100%;
+  height: 107px;  /* временно для сетки*/
+  margin-bottom: 28px;
+}
+
+.hit__img {
+  width: 260px;
+  height: 315px;
+}
+
+.hit__price {
+  min-height: 74px;
+}
+
+.hit__to-order {
+  display: block;
+  min-height: 52px;
+}
+
+@media #{$tablet-widths} {
+
+  .hit {
+    margin-bottom: 52px;
+  }
+
+  .hit__header {
+    @include clearfix;
+  }
+
+  .hit__title {
+    float :left;
+    width: 500px;
+    min-height: 50px; /* временно для сетки*/
+  }
+
+  .hit__flag {
+    float: right;
+    width: 70px; /* временно для сетки*/
+    min-height: 32px; /* временно для сетки*/
+    margin-right: 28px;
+    margin-top: 10px;
+  }
+
+  .hit__body {
+    float: left;
+    width: 290px;
+    margin-right: 44px;
+  }
+
+  .hit__description {
+    min-height: 90px;
+    margin-top: 50px;
+    margin-bottom: 42px;
+  }
+
+  .hit__characteristics {
+    height: 120px;  /* временно для сетки*/
+    margin-bottom: 28px;
+  }
+
+  .hit__img {
+    float: right;
+    width: 334px;
+    height: 404px;
+    margin-top: 51px;
+  }
+
+  .hit__footer {
+    float: left;
+    width: 290px;
+  }
+
+  .hit__to-order {
+    min-height: 52px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .hit {
+    margin-bottom: 73px;
+  }
+
+  .hit__header {
+    position: relative;
+    z-index: 20;
+    padding-top: 63px;
+    padding-left: 175px;
+  }
+
+  .hit__title {
+    width: 700px;
+    min-height: 57px; /* временно для сетки*/
+  }
+
+  .hit__flag {
+    position: absolute;
+    left: 47px;
+    top: 60px;
+  }
+
+  .hit__body {
+    padding-left: 175px;
+    margin-right: 58px;
+  }
+
+  .hit__description {
+    margin-top: 45px;
+  }
+
+  .hit__characteristics {
+    margin-bottom: 93px;
+  }
+
+  .hit__img {
+    position: relative;
+    z-index: 10;
+    width: 525px;
+    height: 636px;
+    margin-top: -122px;
+  }
+
+  .hit__footer {
+    padding-left: 175px;
+  }
+
 }

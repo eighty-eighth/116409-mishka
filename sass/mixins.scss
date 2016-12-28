@@ -1,1 +1,51 @@
-/*  Пока пусто, но на следующем задании появится 8-) */
+/* Миксин для чистки флоатов */
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* Миксин для контентных блоков без внутренних отступов*/
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 668px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1050px;
+  }
+}
+
+/* Миксин для контентных блоков с внутренними отступами*/
+@mixin container-padding() {
+  width: 260px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media #{$tablet-widths} {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1050px;
+  }
+}
+
+/* Миксин для обводок */
+
+@mixin no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}

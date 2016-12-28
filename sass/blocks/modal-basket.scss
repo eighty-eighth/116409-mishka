@@ -1,0 +1,67 @@
+.modal-basket {
+  @include container-padding;
+}
+
+.modal-basket__wrapper {
+  padding-top: 35px;
+}
+
+.modal-basket__title {
+  min-height: 60px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.modal-basket__form {
+  line-height: 0;
+}
+
+.modal-basket__fieldset {
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+}
+
+.modal-basket__legend {
+  min-height: 60px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.modal-basket__label {
+  display: inline-block;
+  width: 80px;
+  min-height: 52px;
+  margin-right: 8px;
+}
+
+.modal-basket__label:last-of-type {
+  margin-right: 0;
+}
+
+.modal-basket__submit {
+  width: 100%;
+  min-height: 52px;
+  padding: 0;
+  border: none;
+}
+
+@media #{$tablet-widths} {
+
+  .modal-basket__wrapper {
+    width: 350px;
+    margin: 0 auto;
+    padding: 50px 108px 45px 108px;
+  }
+
+  .modal-basket__title {
+    min-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .modal-basket__label {
+    width: 112px;
+    margin-right: 5px;
+  }
+}

@@ -1,3 +1,51 @@
 .main-form {
-  box-shadow: 0 0 0 2px red;
+  margin-bottom: 55px;
+}
+
+.main__wrapper {
+  @include container;
+}
+
+.main-form__title {
+  min-height: 30px;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 73px 0;
+}
+
+.main-form__intro {
+  min-height: 96px;
+  margin: 0;
+}
+
+@media #{$tablet-widths} {
+
+  .main-form {
+    margin-bottom: 0;
+  }
+
+  .main-form__title {
+    min-height: 50px;
+    margin-bottom: 82px;
+    padding-top: 10px;
+  }
+
+  .main-form__intro {
+    min-height: 60px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .main-form__title {
+    min-height: 57px;
+    margin-bottom: 130px;
+    padding-bottom: 95px;
+  }
+
+  .main-form__intro {
+    margin: 0 175px;
+  }
+
 }

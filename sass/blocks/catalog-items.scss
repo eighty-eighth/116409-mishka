@@ -1,3 +1,15 @@
 .catalog-items {
-  box-shadow: 0 0 0 2px orange;
+  margin-bottom: 30px;
+}
+
+.catalog-items__wrapper {
+  @include container-padding;
+}
+
+@media #{$desktop-widths} {
+
+  .catalog-items {
+    margin-bottom: 0;
+  }
+
 }
